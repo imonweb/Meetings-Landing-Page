@@ -1,3 +1,209 @@
-body {
-  background-color: paleturquoise;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.landing {
+  background-image: url('../images/bg_01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  min-height: 600px;
+}
+
+.features {
+  background-image: url('../images/bg_02.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  min-height: 600px;
+  position: relative;
+}
+
+.groups {
+  background-image: url('../images/bg_03.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  min-height: 600px;
+  position: relative;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+a {
+  font-size: 16px;
+}
+
+.btnOne {
+  border: white 2px solid;
+  border-radius: 100px;
+  padding: 0.6em 1.7em;
+}
+
+.btnTwo {
+  background-color: #1F2122;
+  border-radius: 100px;
+  padding: 0.6em 1.75em;
+  display: block;
+  width: 160px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+ /* Landing Section   */
+
+ .nav {
+   padding-top: 3em;
+ }
+
+ .pages {
+   float: right;
+   text-align: right;
+ }
+
+ .pages a {
+   text-decoration: none;
+   color: white;
+   margin-left: 25px;
+   vertical-align: middle;
+ }
+
+ .logo {
+   width: 160px;
+   vertical-align: middle;
+ }
+
+ .landingWrapper {
+   width: 88%;
+   margin: auto;
+ }
+
+ .landingContent {
+   width: 88%;
+   margin: 150px auto 0 auto;
+   display: flex;
+ }
+
+ .contentLeft {
+   flex: 0 0 55%;
+ }
+
+ .contentRight {
+   flex: 0 0 45%;
+ }
+
+ .iphoneHand {
+   width: 420px;
+   margin-top: -55px;
+ }
+
+.contentLeft h1, .contenLeft p, .contenLeft a {
+  color: white;
+  text-decoration: none;
+}
+
+/*  Features Section */
+.date {
+  position: absolute;
+  top: 150px;
+  left: 11%;
+}
+
+.time {
+  position: absolute;
+  bottom: 900px;
+  right: 15%;
+}
+
+.date h1, .date img, .time h1, .time img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.date img, .time img{
+  margin-bottom: 10px;
+  width: 36px;
+}
+
+.date p, .time p {
+  display: block;
+  margin-left: 44px;
+}
+
+/*  Groups */
+.groupsWrapper {
+  width: 88%;
+  margin: auto;
+}
+
+.groupsContent {
+  width: 88%;
+  margin: 150px auto 0 auto;
+  display: flex;
+}
+
+.contentLeft img, .contentLeft h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contentLeft img {
+  margin-bottom: 10px;
+  width: 3px;
+}
+
+.groupsContent > .contentLeft p {
+  margin-left: 50px;
+}
+
+.groupImage {
+  width: 500px;
+  margin-top: -50px;
+}
+
+.footer {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50);
+}
+
+.footer p {
+  color: #454D4E;
+  display: inline-block;
+}
+
+.pagesRight {
+  margin-left: 25px;
 }
